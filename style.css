@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#red {
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10rem;
+}
+#red:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+#yellow {
+  width: 10rem;
+  height: 10rem;
+  background-color: yellow;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10rem;
+}
+
+#green {
+  width: 10rem;
+  height: 10rem;
+  text-transform: uppercase;
+  background-color: green;
+  border-radius: 10px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10rem;
+}
+.flex {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}

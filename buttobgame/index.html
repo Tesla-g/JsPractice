@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <style>
+      .clear {
+        display: block;
+        width: 5rem;
+        height: 2rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+        border: none;
+      }
+      .btn {
+        border-radius: 10px;
+
+        width: 10rem;
+        height: 10rem;
+      }
+      .flex {
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 5rem;
+        height: 5rem;
+        background-color: aqua;
+      }
+      .content {
+        border: 1px solid black;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      }
+      #demo {
+        background-color: aqua;
+      }
+
+      .square {
+        display: inline-block;
+        margin-right: 2rem;
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="container">
+        <button
+          type="button"
+          class="btn"
+          id="red"
+          style="background-color: red"
+        ></button>
+        <button
+          class="btn squares"
+          id="aqua"
+          style="background-color: aqua"
+        ></button>
+        <button
+          class="btn squares"
+          id="brown"
+          style="background-color: brown"
+        ></button>
+        <button class="clear squares" id="clear">clear all</button>
+      </div>
+    </div>
+
+    <!-- <div class="content">
+      <div class="box"></div>
+    </div> -->
+
+    <section>
+      <div class="center">
+        <p>I am <span id="demo">vertical</span> and horizontally centered.</p>
+        <button id="karochange">Change text</button>
+      </div>
+      <section class="flex" id="d1">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <button id="pick">Pick Random</button>
+        <button id="reset">reset</button>
+      </section>
+
+      <section>
+        <div id="d2">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+            doloribus minima alias vero labore excepturi accusantium
+            praesentium. Est sit quia explicabo aspernatur, nobis quas labore
+            natus fuga doloribus? Reiciendis, quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, quo in molestiae nostrum, explicabo harum, aliquam
+            consequuntur reiciendis ullam autem quod eos nihil quas neque velit
+            accusantium eveniet facere eius?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+            aliquid incidunt ullam tenetur error, doloribus ad. Accusamus, animi
+            iure! Magni molestiae dolor enim aliquid deserunt mollitia accusamus
+            modi accusantium aspernatur.
+          </p>
+          <div></div>
+          <button id="changecolorbtn">changecolorbtn</button>
+          <button id="removecolor">removecolor</button>
+          <h3 id="show"></h3>
+        </div>
+      </section>
+    </section>
+    <script src="/buttobgame/script.js"></script>
+  </body>
+</html>

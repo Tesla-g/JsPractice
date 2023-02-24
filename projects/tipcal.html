@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #8990ec;
+      }
+      .wrappper {
+        width: 558px;
+        border-radius: 10px;
+        background-color: #272639;
+        margin-top: 59px;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      div label {
+        display: block;
+        text-align: start;
+        font-weight: 500;
+        font-size: 27px;
+        color: white;
+        /* text-transform: uppercase; */
+        margin-bottom: 0.5rem;
+      }
+      div input {
+        border-radius: 10px;
+        background-color: #353959;
+        border: none;
+        padding: 24px;
+        width: 91%;
+        font-size: 29px;
+        color: white;
+        margin-bottom: 2.5rem;
+      }
+      .flext {
+        display: flex;
+        justify-content: center;
+      }
+      .calualtor {
+        width: 80%;
+        margin-top: 20%;
+      }
+      /* .flex-end {
+        justify-content: flex-start;
+      }
+      .flex-end p {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .flex-end button {
+        width: 20%;
+        height: 20%;
+      } */
+      .autodecement {
+        width: 11rem;
+        height: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: #8288e4;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .autodecement span {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .autodecement span.num {
+        border-left: 2px solid rgba(0, 0, 0, 0.2);
+        border-right: 2px solid rgba(0, 0, 0, 0.2);
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .block {
+        display: block;
+      }
+      .title {
+        font-size: 23px;
+        color: white;
+      }
+      .total {
+        font-size: 45px;
+        font-weight: 900;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="wrappper flext">
+        <div class="calualtor">
+          <div>
+            <label for="to-amt">Bill-Total</label>
+            <input
+              type="text"
+              name="Total bill Amount"
+              id="to-amt"
+              placeholder="$0"
+              autofocus
+            />
+          </div>
+
+          <div>
+            <label for="tip-amt">Tip</label>
+            <input
+              type="text"
+              name="Tip Amount"
+              id="tip-amt"
+              placeholder="%0"
+              autofocus
+            />
+          </div>
+          <!-- <div class="flex flex-end">
+            <button class="minus">-</button>
+            <p>1</p>
+            <button class="plus">+</button>
+          </div> -->
+          <label for="" class="block">People</label>
+          <div class="bottom">
+            <div class="autodecement">
+              <span class="minus">-</span>
+              <span class="num">01</span>
+              <span class="plus">+</span>
+            </div>
+            <div class="totalContainer">
+              <div class="title">Total per Person</div>
+              <div class="total" id="perPersonTotal">$0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
